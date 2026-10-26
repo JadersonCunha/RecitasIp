@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Livro de receitas Sabores Jovens, criado com carinho pelas turmas da manhã e da tarde.">
+  <title>Sabores Jovens — Livro de Receitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="intro-loader" id="intro-loader" role="status" aria-label="Abrindo o Livro de Receitas">
+    <div class="loader-stage" aria-hidden="true">
+      <img class="loader-logo loader-logo-institution" src="/manus-storage/logoicm-transparente_6c595014.png" onerror="this.onerror=null;this.src='assets/logoicm-transparente.png'" alt="">
+      <img class="loader-logo loader-logo-recipe" src="/manus-storage/logo-receitas-transparente_8d7e5e4f.png" onerror="this.onerror=null;this.src='assets/logo-receitas-transparente.png'" alt="">
+    </div>
+    <p class="loader-caption">Sabores Jovens</p>
+  </div>
+  <div class="site-shell">
+    <header class="topbar" id="inicio">
+      <a class="brand" href="#inicio" aria-label="Sabores Jovens, voltar ao início">
+        <img class="brand-logo" src="/manus-storage/logo-receitas-transparente_8d7e5e4f.png" onerror="this.onerror=null;this.src='assets/logo-receitas-transparente.png'" alt="Logo do Livro de Receitas">
+        <span class="brand-name">Sabores<span>Jovens</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#receitas">Receitas</a>
+        <a href="#turmas">Turmas</a>
+        <a href="#sobre">Sobre o projeto</a>
+      </nav>
+      <a class="nav-cta" href="#receitas">Explorar receitas <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> feito em equipe, servido com carinho</p>
+          <h1 id="hero-title">Receitas que contam<br><em>histórias.</em></h1>
+          <p class="hero-text">Um livro de receitas feito pelas turmas da manhã e da tarde para celebrar criatividade, afeto e aquele sabor gostoso de casa.</p>
+          <div class="hero-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#receitas">Ver receitas <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="#turmas">Conhecer as turmas <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-stats" aria-label="Resumo do projeto">
+            <div><strong>15</strong><span>receitas<br>para descobrir</span></div>
+            <div><strong>05</strong><span>turmas<br>envolvidas</span></div>
+            <div><strong>∞</strong><span>memórias<br>compartilhadas</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração decorativa de uma mesa com ingredientes" role="img">
+          <div class="art-note note-one">feito<br>à mão</div>
+          <div class="art-note note-two">bom<br>apetite!</div>
+          <div class="art-sun"></div>
+          <div class="art-plate"><div class="art-food"></div></div>
+          <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
+          <div class="art-dot dot-one"></div><div class="art-dot dot-two"></div><div class="art-dot dot-three"></div>
+          <span class="art-label">receitas<br>caseiras</span>
+        </div>
+      </section>
+
+      <section class="intro-strip" id="sobre" aria-labelledby="sobre-title">
+        <div class="section-kicker">o projeto</div>
+        <div class="intro-content">
+          <h2 id="sobre-title">Na cozinha, todo mundo<br><span>tem algo para ensinar.</span></h2>
+          <p>Este livro reúne preparos doces e salgados experimentados com muito entusiasmo. Cada receita é um convite para aprender junto, dividir tarefas e transformar ingredientes simples em momentos especiais.</p>
+        </div>
+      </section>
+
+      <section class="recipes-section" id="receitas" aria-labelledby="recipes-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">o cardápio</div>
+            <h2 id="recipes-title">Escolha uma receita<br><span>e coloque a mão na massa.</span></h2>
+          </div>
+          <p class="section-aside">Do clássico ao criativo,<br>tem sabor para todo mundo.</p>
+        </div>
+
+        <div class="recipe-toolbar" aria-label="Ferramentas de busca e filtro">
+          <label class="search-box" for="recipe-search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="recipe-search" type="search" placeholder="Buscar por receita ou ingrediente..." autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <div class="category-filters" id="category-filters" role="group" aria-label="Filtrar por categoria">
+            <button class="filter-chip is-active" type="button" data-category="Todas">Todas</button>
+            <button class="filter-chip" type="button" data-category="Doces">Doces</button>
+            <button class="filter-chip" type="button" data-category="Salgados">Salgados</button>
+            <button class="filter-chip" type="button" data-category="Bolos">Bolos</button>
+            <button class="filter-chip" type="button" data-category="Especiais">Especiais</button>
+          </div>
+        </div>
+
+        <div class="results-line"><span id="results-count">15 receitas</span><span class="results-rule"></span><span>todas testadas com carinho</span></div>
+        <div class="recipe-grid" id="recipe-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">✦</span>
+          <h3>Nenhuma receita encontrada</h3>
+          <p>Tente outro nome, ingrediente ou categoria.</p>
+          <button class="button button-primary" type="button" id="clear-search">Limpar busca</button>
+        </div>
+      </section>
+
+      <section class="classes-section" id="turmas" aria-labelledby="classes-title">
+        <div class="classes-heading">
+          <div class="section-kicker">quem fez acontecer</div>
+          <h2 id="classes-title">Cinco turmas,<br><span>uma cozinha só.</span></h2>
+          <p>Esse projeto ganhou sabor porque foi construído por muitas mãos. Conheça as turmas que participaram das receitas nos turnos da manhã e da tarde.</p>
+          <div class="educator-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong></div>
+        </div>
+        <div class="classes-grid">
+          <article class="class-card class-orange"><span class="class-number">01</span><span class="class-icon">✳</span><h3>Trabalho<br>Educativo</h3><p>Aprender fazendo</p></article>
+          <article class="class-card class-blue"><span class="class-number">02</span><span class="class-icon">◒</span><h3>Gratidão</h3><p>Compartilhar é celebrar</p></article>
+          <article class="class-card class-lilac"><span class="class-number">03</span><span class="class-icon">✦</span><h3>Fé</h3><p>Cozinhar com propósito</p></article>
+          <article class="class-card class-yellow"><span class="class-number">04</span><span class="class-icon">⌁</span><h3>Acolhida</h3><p>Tem lugar para todo mundo</p></article>
+          <article class="class-card class-green"><span class="class-number">05</span><span class="class-icon">↗</span><h3>Empatia</h3><p>Receitas feitas em conjunto</p></article>
+        </div>
+      </section>
+
+      <section class="closing-banner" aria-label="Mensagem final">
+        <div class="closing-shape shape-left"></div><div class="closing-shape shape-right"></div>
+        <div class="closing-content"><span class="closing-spark">✦</span><h2>O melhor ingrediente<br><em>é estar junto.</em></h2><p>Prepare, compartilhe e crie uma nova história ao redor da mesa.</p><a href="#receitas" class="button button-light">Escolher uma receita <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#inicio" aria-label="Sabores Jovens, voltar ao início"><img class="brand-logo" src="/manus-storage/logo-receitas-transparente_8d7e5e4f.png" onerror="this.onerror=null;this.src='assets/logo-receitas-transparente.png'" alt="Logo do Livro de Receitas"><span class="brand-name">Sabores<span>Jovens</span></span></a>
+      <p>Um livro feito por muitas mãos.<br><span>© 2026 Sabores Jovens</span></p>
+      <a href="#inicio" class="back-top">voltar ao topo <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>
