@@ -83,3 +83,20 @@ document.addEventListener('keydown', event => {
 });
 
 updateRecipes();
+
+const backToTop = document.querySelector('#back-to-top');
+const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+const sections = ['inicio', 'receitas', 'turmas', 'sobre'].map(id => document.getElementById(id));
+
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('is-visible', window.scrollY > 300);
+  let current = '';
+  sections.forEach(section => {
+    if (section && window.scrollY >= section.offsetTop - 120) current = section.id;
+  });
+  bottomNavItems.forEach(item => {
+    item.classList.toggle('is-active', item.getAttribute('href') === '#' + current);
+  });
+});
+
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
