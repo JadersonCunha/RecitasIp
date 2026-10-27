@@ -13,6 +13,7 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <div id="inicio"></div>
   <div class="intro-loader" id="intro-loader" role="status" aria-label="Abrindo o Livro de Receitas">
     <div class="loader-stage" aria-hidden="true">
       <img class="loader-logo loader-logo-institution" src="/manus-storage/logoicm-transparente_6c595014.png" onerror="this.onerror=null;this.src='assets/logoicm-transparente.png'" alt="">
@@ -21,7 +22,7 @@
     <p class="loader-caption">Sabores Jovens</p>
   </div>
   <div class="site-shell">
-    <header class="topbar" id="inicio">
+    <header class="topbar">
       <a class="brand" href="#inicio" aria-label="Sabores Jovens, voltar ao início">
         <img class="brand-logo" src="/manus-storage/logo-receitas-transparente_8d7e5e4f.png" onerror="this.onerror=null;this.src='assets/logo-receitas-transparente.png'" alt="Logo do Livro de Receitas">
         <span class="brand-name">Sabores<span>Jovens</span></span>
@@ -40,7 +41,7 @@
           <p class="eyebrow"><span class="eyebrow-dot"></span> feito em equipe, servido com carinho</p>
           <h1 id="hero-title">Receitas que contam<br><em>histórias.</em></h1>
           <p class="hero-text">Um livro de receitas feito pelas turmas da manhã e da tarde para celebrar criatividade, afeto e aquele sabor gostoso de casa.</p>
-          <div class="hero-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong></div>
+          <div class="hero-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong><img class="credit-logo" src="assets/logoicm-transparente.png" alt="Logo ICM"></div>
           <div class="hero-actions">
             <a class="button button-primary" href="#receitas">Ver receitas <span aria-hidden="true">↓</span></a>
             <a class="button button-quiet" href="#turmas">Conhecer as turmas <span aria-hidden="true">↗</span></a>
@@ -109,14 +110,14 @@
           <div class="section-kicker">quem fez acontecer</div>
           <h2 id="classes-title">Cinco turmas,<br><span>uma cozinha só.</span></h2>
           <p>Esse projeto ganhou sabor porque foi construído por muitas mãos. Conheça as turmas que participaram das receitas nos turnos da manhã e da tarde.</p>
-          <div class="educator-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong></div>
+          <div class="educator-credit"><span>Instituto Providência</span><strong>Educadora Renata Vieira</strong><img class="credit-logo" src="assets/logoicm-transparente.png" alt="Logo ICM"></div>
         </div>
         <div class="classes-grid">
-          <article class="class-card class-orange"><span class="class-number">01</span><span class="class-icon">✳</span><h3>Trabalho<br>Educativo</h3><p>Aprender fazendo</p></article>
-          <article class="class-card class-blue"><span class="class-number">02</span><span class="class-icon">◒</span><h3>Gratidão</h3><p>Compartilhar é celebrar</p></article>
-          <article class="class-card class-lilac"><span class="class-number">03</span><span class="class-icon">✦</span><h3>Fé</h3><p>Cozinhar com propósito</p></article>
-          <article class="class-card class-yellow"><span class="class-number">04</span><span class="class-icon">⌁</span><h3>Acolhida</h3><p>Tem lugar para todo mundo</p></article>
-          <article class="class-card class-green"><span class="class-number">05</span><span class="class-icon">↗</span><h3>Empatia</h3><p>Receitas feitas em conjunto</p></article>
+          <article class="class-card class-orange"><h3>Trabalho<br>Educativo</h3><p>Aprender fazendo</p></article>
+          <article class="class-card class-blue"><h3>Gratidão</h3><p>Compartilhar é celebrar</p></article>
+          <article class="class-card class-lilac"><h3>Fé</h3><p>Cozinhar com propósito</p></article>
+          <article class="class-card class-yellow"><h3>Acolhida</h3><p>Tem lugar para todo mundo</p></article>
+          <article class="class-card class-green"><h3>Empatia</h3><p>Receitas feitas em conjunto</p></article>
         </div>
       </section>
 
@@ -128,19 +129,19 @@
 
     <nav class="bottom-nav" aria-label="Navegação mobile">
       <a class="bottom-nav-item" href="#inicio">
-        <span aria-hidden="true">⌂</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
         <span>Início</span>
       </a>
       <a class="bottom-nav-item" href="#receitas">
-        <span aria-hidden="true">✦</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 017 7c0 4-3 6-3 9H8c0-3-3-5-3-9a7 7 0 017-7z"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="9" y1="18" x2="15" y2="18"/></svg>
         <span>Receitas</span>
       </a>
       <a class="bottom-nav-item" href="#turmas">
-        <span aria-hidden="true">◒</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M21 21v-2a4 4 0 00-3-3.87"/></svg>
         <span>Turmas</span>
       </a>
       <a class="bottom-nav-item" href="#sobre">
-        <span aria-hidden="true">○</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         <span>Sobre</span>
       </a>
     </nav>
