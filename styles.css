@@ -67,7 +67,7 @@ body.is-loading { overflow: hidden; }
 
 .intro-loader { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; align-content: center; gap: 18px; background: var(--cream); opacity: 1; transition: opacity .55s ease, visibility .55s ease; }
 .intro-loader.is-complete { opacity: 0; visibility: hidden; pointer-events: none; }
-.loader-stage { width: min(55vmin, 280px); height: min(55vmin, 280px); position: relative; perspective: 900px; }
+.loader-stage { width: min(55vmin, 280px); aspect-ratio: 1; position: relative; perspective: 900px; flex-shrink: 0; }
 .loader-logo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
 .loader-logo-institution { animation: institution-spin 2.25s cubic-bezier(.2,.8,.25,1) forwards; }
 .loader-logo-recipe { opacity: 0; transform: rotateY(90deg) scale(.72); animation: recipe-reveal 1.45s 1.9s cubic-bezier(.2,.75,.25,1) forwards; }
